@@ -20,4 +20,4 @@ Minimax will recursively call itself for each action each time on the other play
 
 # Alpha beta pruning
 Alpha beta pruning is a way to cut down on the amount of calls made to Minimax, <br>
-if we spot a position in the tree that is too good for the opponent then what we found already we know we can just stop the search immediately on that branch
+if we spot a position in the tree that is *too good* for the opponent then what we found already we know we can just stop the search immediately on that branch
