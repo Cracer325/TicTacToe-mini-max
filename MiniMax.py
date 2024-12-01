@@ -29,9 +29,9 @@ def action(current_state, player):
     for i in range(len(current_state)):
         if  current_state[i] == " ":
             moves.append(i)
-    def sorting(move):
+    def sort(move):
         return heuristic(current_state, player, move)
-    return sorted(moves, key=sorting)
+    return sorted(moves, key=sort)
 
 def result(current_state, player, current_move ):
     new_board = [i for i in current_state]
