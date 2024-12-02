@@ -12,7 +12,7 @@ We have 4 main functions (one of which is two):
 Terminal determines whether the specific position is a terminal position or not <br>
 state determines which one is it (-1 if the min player won, 1 if the max, 0 if draw)
 ## Action
-It gives all the possible moves from a specific position, in tic tac toe it's super simple, however it can get very complicated)
+It gives all the possible moves from a specific position, in tic tac toe it's super simple, however it can get very complicated
 ## Result
 Result will compute the result of a specific action.
 ## Minimax
@@ -21,3 +21,4 @@ Minimax will recursively call itself for each action each time on the other play
 # Alpha beta pruning
 Alpha beta pruning is a way to cut down on the amount of calls made to Minimax, <br>
 if we spot a position in the tree that is *too good* for the opponent then what we found already we know we can just stop the search immediately on that branch
+Alpha beta pruning can be highly effective if the moves are from best to last, while usually we try to sort them by making a heuristic evaluator (a function that evaluates based on good-practice, in our case stuff like blocking a row for the opponent) in our case it had minimal effect and actually made it slower because of the additional checks, so we don't have it.
